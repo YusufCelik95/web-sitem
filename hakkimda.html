@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <div class="box">
+        <img src="pp.jpg"> 
+        <h1>YUSUF ÇELİK</h1>
+        <h5>Bilgisyar Mühendisi 1.Sınıf</h5>
+        <p>Merhaba, ben Yusuf Çelik. 2005 yılında Diyarbakır’da doğdum ve büyüdüm. Çocukluğumdan beri teknolojiye ve bilgisayarlara karşı hep bir merakım vardı. Şu an Batman Üniversitesi’nde Bilgisayar Mühendisliği 1. sınıf öğrencisiyim ve bu hayalimde ilerlemek için çabalıyorum.
+
+            Kendi yolumu çizmek, hem öğrenmek hem de kendimi geliştirmek benim için çok önemli. Yeni şeyler keşfetmeyi, teknolojinin hayatımızdaki etkilerini araştırmayı ve tabii ki bu alanda bir iz bırakmayı çok istiyorum.</p>
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/y.usuf_celik/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/YusufCelik95?tab=overview&from=2024-12-01&to=2024-12-20"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+<script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML("afterbegin", data);
+        });
+</script>
+

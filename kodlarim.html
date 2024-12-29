@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodlarım</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="services">
+        <h1>Projelerim</h1>
+        <p>Aşağıda GitHub'da paylaştığım projelerimin bağlantılarını bulabilirsiniz:</p>
+
+        <div class="project-list">
+            <div class="project">
+                <h3>Proje 1: Örnek Web Sitesi</h3>
+                <p>HTML, CSS ve JavaScript kullanılarak hazırlanmış bir web sitesi.</p>
+                <a href="https://github.com/kullaniciadi/proje1" target="_blank">GitHub'da Görüntüle</a>
+            </div>
+            <div class="project">
+                <h3>Proje 2: Python Veri Analizi</h3>
+                <p>Python ve Pandas kütüphanesi ile veri analizi projeleri.</p>
+                <a href="https://github.com/kullaniciadi/proje2" target="_blank">GitHub'da Görüntüle</a>
+            </div>
+            <div class="project">
+                <h3>Proje 3: Mobil Uygulama</h3>
+                <p>React Native ile geliştirilmiş bir mobil uygulama.</p>
+                <a href="https://github.com/kullaniciadi/proje3" target="_blank">GitHub'da Görüntüle</a>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML("afterbegin", data);
+        });
+</script>
+
+
+
+
+
+
